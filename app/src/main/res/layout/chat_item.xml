@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:id="@+id/innerlayout"
+        android:layout_margin="2dp"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/cardview"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="60dp"
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/picture"
+                android:scaleType="centerCrop"
+                android:src="@drawable/srk1"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtname"
+            android:text="Shahrukh"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/cardview"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtmsg"
+            android:text="My name is Khan"
+            android:textSize="15dp"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/cardview"
+            android:layout_marginTop="52dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttime"
+            android:text="2:18PM"
+            android:textSize="12dp"
+            android:layout_marginLeft="228dp"
+            android:layout_toRightOf="@+id/cardview"
+            android:layout_marginTop="23dp" />
+
+
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="___________________________________________________________"
+            android:textColor="#CDC7C7"
+            android:textSize="5dp"
+            android:layout_toRightOf="@+id/picture"
+
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="5dp"
+            tools:ignore="NotSibling" />
+
+    </RelativeLayout>
+
+</LinearLayout>

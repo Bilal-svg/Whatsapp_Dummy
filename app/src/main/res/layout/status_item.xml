@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:id="@+id/statuslayout"
+        android:layout_margin="2dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#1529AA"
+            android:id="@+id/cardviewstatus"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="center"
+
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/picturestatus"
+                    android:src="@drawable/srk2"
+                    android:scaleType="centerCrop"
+                    />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statusname"
+            android:text="Shahrukh Khan"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/cardviewstatus"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statustime"
+            android:text="7 minutes ago"
+            android:layout_toRightOf="@+id/cardviewstatus"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            />
+
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="___________________________________________________________"
+            android:textColor="#CDC7C7"
+            android:textSize="5dp"
+            android:layout_toRightOf="@+id/picturestatus"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="5dp"
+            tools:ignore="NotSibling" />
+    </RelativeLayout>
+
+</LinearLayout>

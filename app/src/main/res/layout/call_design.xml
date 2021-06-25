@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:id="@+id/callLayout"
+    android:layout_margin="2dp"
+    android:background="@color/white"
+
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/cardviewcall"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="60dp"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/picturecall"
+            android:scaleType="centerCrop"
+            android:src="@drawable/srk3"
+
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtname"
+        android:text="Sharukh Khan"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/cardviewcall"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/callsent"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:src="@drawable/ic_baseline_call_made_24"
+        android:layout_toRightOf="@+id/cardviewcall"
+        android:layout_marginTop="47dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttiming"
+        android:text="Yesterday,12:50 PM"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@+id/callsent"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/callicon"
+        android:src="@drawable/ic_baseline_call_24"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="297dp"
+        />
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="___________________________________________________________"
+        android:textColor="#CDC7C7"
+        android:textSize="5dp"
+        android:layout_toRightOf="@+id/picture"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="5dp"
+        />
+</RelativeLayout>
+
+
+</LinearLayout>
